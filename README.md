@@ -72,4 +72,6 @@ ShowFitPlot[{1.0, 3.1, 5.1, 6.9, 9.0}, Table[i, {i, 1, 5}], "Anon Value (a)", "S
 
 参考了 Github 项目 [Rankyer/ShanghaiTech-PHYS1111](https://github.com/Rankyer/ShanghaiTech-PHYS1111)，在此表示诚挚感谢。
 
-还有不了解 Mathematica 的人？欢迎来看我的教程 [Mathematica中的高等数学和线性代数](https://github.com/Jerry-1031/Linear-Algebra-in-Mathematica)！
+实验记录表，实验讲义等资源见 [Sharp-shi/ShanghaiTech-PHYS1111-wqy](https://github.com/Sharp-shi/ShanghaiTech-PHYS1111-wqy)。
+
+还有不了解 Mathematica 的人？欢迎点击我的教程 [Mathematica中的高等数学和线性代数](https://github.com/Jerry-1031/Linear-Algebra-in-Mathematica)！
