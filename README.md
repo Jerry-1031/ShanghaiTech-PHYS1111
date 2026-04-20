@@ -44,8 +44,9 @@ ShowFitPlot[dataX_List,dataY_List]:=ShowFitPlot[dataX,dataY,"","",""];
 
 ## `DataStatistic`
 
-参数为一个列表，代表要统计的数据。你需要根据各项实验所对应仪器的 $\Delta B$ 来更改代码中的 `deltaB` 项。  
-输出平均值，标准差，平均标准差，$\Delta A$，$\Delta B$，不确定度 $U$；返回最终的平均值与不确定度。
+参数为一个列表，代表要统计的数据。你需要根据各项实验所对应仪器的 $\Delta B$ 来更改代码中的 `deltaB` 项。
+
+输出平均值，标准差，平均标准差, $\Delta A$, $\Delta B$, 不确定度 $U$；返回作为一个 `Around` 对象的平均值与不确定度。
 
 ### 使用例
 
@@ -57,20 +58,21 @@ DataStatistic[{1, 2, 3, 4, 5}]
 
 ## `ShowFitPlot`
 
-参数为两个列表与对应的轴名称，图名称，其中轴名称与图名称可选。  
-输出最佳拟合线性函数与图片；返回两个参数的列表，分别对应截距与斜率。
+参数为两个列表与对应的轴名称，图名称，其中轴名称与图名称可选。
+
+输出最佳拟合线性函数与拟合图形；返回一个有两个参数的列表，分别对应截距与斜率。
 
 ### 使用例
 
 ```mathematica
-ShowFitPlot[{1.0, 3.1, 5.1, 6.9, 9.0}, Table[i, {i, 1, 5}], "Anon Value (a)", "Soyo Value (s)", "Anon-Soyo Fit Plot" ]
+ShowFitPlot[{1.0, 3.1, 5.1, 6.9, 9.0}, Table[i, {i, 1, 5}], "Anon Value (a)", "Soyo Value (s)", "Anon-Soyo Fit Plot"]
 ```
 
 <img src="https://github.com/user-attachments/assets/eb12003c-8cbf-4275-b218-0bd8eee0f043" />
 
 # Note
 
-参考了 Github 项目 [Rankyer/ShanghaiTech-PHYS1111](https://github.com/Rankyer/ShanghaiTech-PHYS1111)，在此表示诚挚感谢。
+参考了项目 [Rankyer/ShanghaiTech-PHYS1111](https://github.com/Rankyer/ShanghaiTech-PHYS1111)，在此表示诚挚感谢。
 
 实验记录表，实验讲义等资源见 [Sharp-shi/ShanghaiTech-PHYS1111-wqy](https://github.com/Sharp-shi/ShanghaiTech-PHYS1111-wqy)。
 
